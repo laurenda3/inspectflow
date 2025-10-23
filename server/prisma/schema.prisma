@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  MACHINIST
+  INSPECTOR
+  SUPERVISOR
+}
+
+enum OrderStatus {
+  QUEUED
+  IN_PROGRESS
+  DONE
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String?
+  role      Role
+  createdAt DateTime @default(now())
+}
+
+model Order {
+  id              String       @id            // matches your visible order numbers like "441"
+  partNumber      String
+  requiredThread  String
+  status          OrderStatus  @default(QUEUED)
+  createdAt       DateTime     @default(now())
+}
+
+model Gauge {
+  id                     String   @id @default(cuid())
+  name                   String
+  lastCalibrated        DateTime
+  calibrationIntervalDays Int
+  expiresAt             DateTime
+  createdAt             DateTime  @default(now())
+}

@@ -1,0 +1,25 @@
+# Node
+node_modules/
+npm-debug.log*
+.yarn/*
+.pnpm-store/
+
+# Build
+.client-build/
+.server-build/
+.next/
+dist/
+out/
+coverage/
+
+# Env & local
+.env
+.env.*
+!.env.example
+.DS_Store
+*.local
+*.log
+
+# Prisma
+server/prisma/dev.db
+server/prisma/dev.db-journal

@@ -1,0 +1,25 @@
+/* Tailwind v4 entry */
+@import "tailwindcss";
+
+/* ---------- Global look ---------- */
+body {
+  @apply bg-gray-50 text-gray-800;
+}
+
+/* Cards / inputs / buttons / chips */
+.card { @apply bg-white shadow-md rounded-lg p-4 border border-gray-200; }
+.input { @apply border border-gray-300 rounded-md px-3 py-2 w-full focus:ring-2 focus:ring-blue-500; }
+.btn { @apply bg-blue-600 text-white px-3 py-2 rounded-md hover:bg-blue-700 transition; }
+.btn-primary { @apply bg-blue-600 hover:bg-blue-700; }
+.badge { @apply text-xs font-semibold px-2 py-1 rounded-full; }
+.badge-ok { @apply bg-green-100 text-green-700; }
+.badge-warn { @apply bg-yellow-100 text-yellow-700; }
+.badge-danger { @apply bg-red-100 text-red-700; }
+
+/* ---------- Print helpers ---------- */
+@media print {
+  .print\:hidden { display: none !important; }
+  html, body { background: #ffffff !important; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  @page { margin: 12mm; }
+}
