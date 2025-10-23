@@ -39,8 +39,8 @@ Background in industrial inspection & machining workflow optimization.
 
 ## Screenshots
 
-![Dashboard](./docs/inspectflows1.png)
-![Inspection Report – Full Width](./docs/inspectflows2.png)
+![Dashboard](./docs/inspectflowss1.png)
+![Inspection Report – Full Width](./docs/inspectflowss2.png)
 
 
 ---
