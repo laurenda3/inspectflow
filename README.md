@@ -2,14 +2,14 @@
 
 A human-centered inspection workflow I built to make life easier for operators, inspectors, and supervisors on the shop floor. No fluff. Just what you actually need: a fast, fillable inspection report, tolerances visible at a glance, autosave, and a layout that respects how we work in real life (desktop or tablet).
 
-I’ve done this job. I know the hiccups—printing packets, hunting SOPs, outdated forms, missing gauge info. InspectFlow is my answer: put the right info in front of the right person at the right time with the fewest clicks possible.
+I was an inspector for a small team where we were responsible for creating our own work order packets.  I know the hiccups—printing packets, hunting SOPs, outdated forms, missing gauge info. InspectFlow is my answer: put the right info in front of the right person at the right time with the fewest clicks possible.
 
 **Created by:** **Laurenda Landry — Software Engineer**  
 Background in industrial inspection & machining workflow optimization.
 
 ---
 
-## What it does (straight up)
+## What it does 
 
 - **8-Round (API 5B) Inspection Report**  
   Fill it like paper—just faster. Tiny numbers like `.00125` are accepted exactly as typed.  
@@ -34,8 +34,6 @@ Background in industrial inspection & machining workflow optimization.
   The UI talks to a **separate Express server** (no Next.js API routes). Clear separation: Client = UI, Server = data/API.
 
 ---
-
-## Screenshots
 
 ## Screenshots
 
