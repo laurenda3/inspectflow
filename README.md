@@ -37,10 +37,11 @@ Background in industrial inspection & machining workflow optimization.
 
 ## Screenshots
 
-> Put images in `docs/` and update these names.
+## Screenshots
 
-![Dashboard](./docs/screenshot-dashboard.png)  
-![Inspection Report – Full Width](./docs/screenshot-report.png)
+![Dashboard](./docs/inspectflows1.png)
+![Inspection Report – Full Width](./docs/inspectflows2.png)
+
 
 ---
 
